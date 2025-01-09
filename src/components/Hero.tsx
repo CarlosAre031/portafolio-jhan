@@ -88,7 +88,7 @@ const Hero = () => {
 
               {/* WhatsApp */}
               <Link 
-                href="https://wa.me/573176988239" 
+                href="https://wa.me/573178859061" 
                 target="_blank"
                 className="group bg-[#25D366] hover:bg-complementary rounded-full p-2 transform transition-all duration-300 hover:scale-110"
               >

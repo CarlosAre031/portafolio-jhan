@@ -89,7 +89,7 @@ const Footer = () => {
   const socialLinks: SocialLink[] = [
     { icon: Github, link: "https://github.com/CarlosAre031", name: "Github" },
     { icon: Linkedin, link: "https://www.linkedin.com/in/jhan-arevalo", name: "LinkedIn" },
-    { icon: MessageSquare, link: "https://wa.me/573176988239", name: "WhatsApp" },
+    { icon: MessageSquare, link: "https://wa.me/573178859061", name: "WhatsApp" },
   ];
 
   // Inicializar EmailJS
@@ -205,7 +205,7 @@ const Footer = () => {
                 <DevicePhoneMobileIcon className="w-6 h-6 text-primary group-hover:animate-bounce" />
                 <div>
                   <h3 className="font-semibold mb-1 text-foreground">Teléfono</h3>
-                  <p className="text-sm text-foreground/75">+57 317-698-8239</p>
+                  <p className="text-sm text-foreground/75">+57 317-885-9061</p>
                 </div>
               </div>
             </div>
