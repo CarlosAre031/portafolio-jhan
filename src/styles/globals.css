@@ -6,11 +6,11 @@
 /* Variables del tema */
 :root {
   /* Variables para el modo claro */
-  --primary: #066a39;
-  --complementary: #825b27;
-  --secondary: #ab364a;
+  --primary: #ab364a;;
+  --complementary: #a23345;
+  --secondary: #066a39;
   --background: #f5eee4;
-  --background-secondary: #f5eee4;
+  --background-secondary: #ecd7d4;
   --foreground: #171717;
   --trans-dur: 0.2s;
   --trans-timing: ease;

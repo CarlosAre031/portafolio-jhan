@@ -36,8 +36,8 @@ const Nav = ({openNav}: Props) => {
                 <div onClick={() => scrollToSection('hero')} className="nav-link text-sm lg:text-base">INICIO</div>
                 <div onClick={() => scrollToSection('about')} className="nav-link text-sm lg:text-base">SOBRE MÍ</div>
                 <div onClick={() => scrollToSection('services')} className="nav-link text-sm lg:text-base">SERVICIOS</div>
-                <div onClick={() => scrollToSection('skills')} className="nav-link text-sm lg:text-base">CERTIFICACIONES</div>
                 <div onClick={() => scrollToSection('projects')} className="nav-link text-sm lg:text-base">PROYECTOS</div>
+                <div onClick={() => scrollToSection('skills')} className="nav-link text-sm lg:text-base">CERTIFICACIONES</div>
                 <div onClick={() => scrollToSection('footer')} className="nav-link text-sm lg:text-base">CONTACTO</div>
                 
                 {/* Botón menú móvil */}

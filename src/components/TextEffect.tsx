@@ -5,13 +5,13 @@ const TextEffect = () => {
     <TypeAnimation
       sequence={[
         'Desarrollador',
-        1500,
+        3000,
         'Ciberseguridad',
-        1500,
+        3000,
         'Programador',
-        1500,
+        3000,
         'Auditor ISO 27001',
-        1500
+        3000
       ]}
       speed={50}
       className="text-[2rem] md:text-[3rem] text-primary hover:text-complementary font-bold uppercase transition-colors duration-300"

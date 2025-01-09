@@ -103,6 +103,10 @@ const HomePage = () => {
             <Services />
           </section>
 
+          <section id="projects" className="scroll-mt-20">
+            <Projects />
+          </section>
+
 
           {/* Skills Section */}
           <section id="skills" className="scroll-mt-20">
@@ -114,10 +118,7 @@ const HomePage = () => {
             <Certifications />
           </section>
 
-          {/* Projects Section */}
-          <section id="projects" className="scroll-mt-20">
-            <Projects />
-          </section>
+
 
           {/* Footer Section */}
           <section id="footer">

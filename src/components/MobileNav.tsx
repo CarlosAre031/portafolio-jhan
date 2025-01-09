@@ -37,8 +37,8 @@ const MobileNav = ({nav, closeNav}:Props) => {
             <div onClick={() => scrollToSection('hero')} className="nav-link-mobile">INICIO</div>
                 <div onClick={() => scrollToSection('about')} className="nav-link-mobile">SOBRE MÍ</div>
                 <div onClick={() => scrollToSection('services')} className="nav-link-mobile">SERVICIOS</div>
-                <div onClick={() => scrollToSection('skills')} className="nav-link-mobile">CERTIFICACIONES</div>
                 <div onClick={() => scrollToSection('projects')} className="nav-link-mobile">PROYECTOS</div>
+                <div onClick={() => scrollToSection('skills')} className="nav-link-mobile">CERTIFICACIONES</div>
                 <div onClick={() => scrollToSection('footer')} className="nav-link-mobile">CONTACTO</div>
             </div>
 
