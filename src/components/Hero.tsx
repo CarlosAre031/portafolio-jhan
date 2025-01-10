@@ -8,10 +8,7 @@ import Link from "next/link";
 
 const Hero = () => {
   const handleDownloadCV = () => {
-    // La ruta del archivo debe ser relativa a la carpeta public
     const cvUrl = '/docs/cv-jhan-arevalo.pdf';
-    
-    // Crear un elemento anchor temporal
     const link = document.createElement('a');
     link.href = cvUrl;
     link.setAttribute('download', 'CV-Jhan-Arevalo.pdf');
@@ -40,19 +37,23 @@ const Hero = () => {
 
       <Particle />
 
-      <div className="relative z-20 w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[3rem] h-full min-h-[calc(100vh-10vh)] items-center py-20 lg:py-0">
+      <div className="relative z-20 w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[3rem] h-full min-h-[calc(100vh-10vh)] items-center pt-24 sm:pt-28 md:pt-20 lg:py-0">
         <div className="text-center lg:text-left">
-          <h1 className="text-2xl sm:text-[35px] md:text-[45px] text-foreground font-bold">
-            ¡HOLA, SOY <span className="text-primary hover:text-complementary transition-colors duration-300">JHAN!</span>
-          </h1>
-          <TextEffect />
+          <div className="space-y-2 sm:space-y-4">
+            <h1 className="text-2xl sm:text-[35px] md:text-[45px] text-foreground font-bold leading-tight sm:leading-normal">
+              ¡HOLA, SOY{" "}
+              <span className="text-primary hover:text-complementary transition-colors duration-300">
+                JHAN!
+              </span>
+            </h1>
+            <TextEffect />
+          </div>
 
           <p className="mt-6 text-base sm:text-[17px] text-foreground/70 max-w-2xl mx-auto lg:mx-0">
             Desarrollador de Software especializado en Ciberseguridad y Auditor ISO 27001. Me dedico a crear soluciones seguras combinando desarrollo y seguridad informática, con un enfoque en la implementación de sistemas robustos y resilientes. Cuento con múltiples certificaciones en ambas áreas, lo que me permite abordar proyectos desde una perspectiva integral de seguridad y eficiencia, garantizando la protección de datos y el cumplimiento de normativas internacionales.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-            {/* Botón de CV */}
             <button 
               onClick={handleDownloadCV}
               className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 
@@ -66,9 +67,7 @@ const Hero = () => {
               <ArrowDownTrayIcon className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
 
-            {/* Contenedor de enlaces sociales */}
             <div className="flex items-center gap-4 mt-4 sm:mt-0">
-              {/* LinkedIn */}
               <Link 
                 href="https://www.linkedin.com/in/jhan-arevalo" 
                 target="_blank"
@@ -77,7 +76,6 @@ const Hero = () => {
                 <Linkedin className="w-8 h-8 sm:w-10 sm:h-10 text-[#0A66C2] group-hover:text-complementary transition-colors duration-300" />
               </Link>
 
-              {/* GitHub */}
               <Link 
                 href="https://github.com/CarlosAre031" 
                 target="_blank"
@@ -86,7 +84,6 @@ const Hero = () => {
                 <Github className="w-8 h-8 sm:w-10 sm:h-10 text-[#171515] dark:text-white group-hover:text-complementary transition-colors duration-300" />
               </Link>
 
-              {/* WhatsApp */}
               <Link 
                 href="https://wa.me/573178859061" 
                 target="_blank"

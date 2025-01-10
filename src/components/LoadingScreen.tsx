@@ -80,33 +80,33 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({
           animate="visible"
           exit="exit"
         >
-          <div className="w-full max-w-3xl p-8">
+          <div className="w-full max-w-3xl mx-4 md:mx-8 p-4 md:p-8">
             {/* Header */}
             <motion.div 
-              className="flex items-center justify-between mb-8"
+              className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 md:mb-8 space-y-2 sm:space-y-0"
               variants={itemVariants}
             >
               <div className="flex items-center space-x-2">
-                <Terminal className="w-6 h-6 text-primary" />
-                <span className="text-primary font-mono">DEV_ENVIRONMENT</span>
+                <Terminal className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+                <span className="text-primary font-mono text-sm md:text-base">DEV_ENVIRONMENT</span>
               </div>
-              <div className="text-foreground/60 font-mono text-sm">
+              <div className="text-foreground/60 font-mono text-xs md:text-sm">
                 {appVersion} | {new Date().toISOString()}
               </div>
             </motion.div>
 
             {/* Main Loading Area */}
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               {/* Progress Indicators */}
               <motion.div 
-                className="grid grid-cols-2 gap-4"
+                className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4"
                 variants={itemVariants}
               >
                 {/* CPU Usage */}
-                <div className="border border-foreground/10 rounded-lg p-4 bg-background">
+                <div className="border border-foreground/10 rounded-lg p-3 md:p-4 bg-background/80">
                   <div className="flex items-center space-x-2 mb-2">
                     <Cpu className="w-4 h-4 text-primary" />
-                    <span className="text-foreground/75 text-sm font-mono">CPU_LOAD</span>
+                    <span className="text-foreground/75 text-xs md:text-sm font-mono">CPU_LOAD</span>
                   </div>
                   <div className="h-2 bg-foreground/10 rounded-full overflow-hidden">
                     <motion.div
@@ -118,10 +118,10 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({
                 </div>
 
                 {/* Memory Usage */}
-                <div className="border border-foreground/10 rounded-lg p-4 bg-background">
+                <div className="border border-foreground/10 rounded-lg p-3 md:p-4 bg-background/80">
                   <div className="flex items-center space-x-2 mb-2">
                     <Database className="w-4 h-4 text-complementary" />
-                    <span className="text-foreground/75 text-sm font-mono">MEMORY_ALLOCATION</span>
+                    <span className="text-foreground/75 text-xs md:text-sm font-mono">MEMORY_ALLOCATION</span>
                   </div>
                   <div className="h-2 bg-foreground/10 rounded-full overflow-hidden">
                     <motion.div
@@ -135,20 +135,20 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({
 
               {/* System Messages */}
               <motion.div 
-                className="border border-foreground/10 rounded-lg p-4 bg-background font-mono"
+                className="border border-foreground/10 rounded-lg p-3 md:p-4 bg-background/80 font-mono"
                 variants={itemVariants}
               >
                 <div className="flex items-center space-x-2 mb-2">
                   <Code2 className="w-4 h-4 text-secondary" />
-                  <span className="text-foreground/75 text-sm">SYSTEM_LOG</span>
+                  <span className="text-foreground/75 text-xs md:text-sm">SYSTEM_LOG</span>
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-1 md:space-y-2">
                   {systemMessages.map((msg, i) => (
                     <motion.div
                       key={i}
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
-                      className="text-sm text-secondary"
+                      className="text-xs md:text-sm text-secondary"
                     >
                       {msg}
                     </motion.div>
@@ -158,11 +158,11 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({
 
               {/* Binary Animation */}
               <motion.div 
-                className="flex justify-center"
+                className="flex justify-center py-2"
                 variants={itemVariants}
               >
                 <div className="flex items-center space-x-2">
-                  <Binary className="w-5 h-5 text-primary" />
+                  <Binary className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                   <div className="flex space-x-1">
                     {[...Array(8)].map((_, i) => (
                       <motion.div
@@ -193,9 +193,9 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({
                     animate={{ width: `${progress}%` }}
                   />
                 </div>
-                <div className="mt-2 flex justify-between text-xs text-foreground/60 font-mono">
+                <div className="mt-2 flex flex-col sm:flex-row justify-between text-xs text-foreground/60 font-mono">
                   <span>PROGRESS: {progress}%</span>
-                  <span>{phases[loadingPhase]}</span>
+                  <span className="mt-1 sm:mt-0">{phases[loadingPhase]}</span>
                 </div>
               </motion.div>
             </div>
