@@ -30,17 +30,17 @@ const About = () => {
             </p>
           </div>
           <button 
-            onClick={handleDownloadCV}
-            className="w-full sm:w-auto px-6 sm:px-8 hover:bg-complementary 
-                     transition-all duration-300 py-3 sm:py-4 
-                     text-base sm:text-lg font-bold uppercase 
-                     bg-primary text-white flex items-center 
-                     justify-center space-x-2 rounded-md
-                     hover:scale-105"
-          >
-            <span>HOJA DE VIDA</span>
-            <ArrowDownTrayIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-          </button>
+                        onClick={handleDownloadCV}
+                        className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 
+                                 text-base sm:text-lg font-bold uppercase 
+                                 bg-primary text-white rounded-md
+                                 hover:bg-complementary hover:scale-105
+                                 transition-all duration-300
+                                 flex items-center justify-center space-x-2"
+                      >
+                        <span>Hoja de Vida</span>
+                        <ArrowDownTrayIcon className="w-5 h-5 sm:w-6 sm:h-6" />
+                      </button>
         </div>
         <div 
           data-aos="fade-left"
