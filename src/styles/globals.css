@@ -19,7 +19,7 @@
 /* Variables para el modo oscuro */
 :root.dark {
   --primary: #ab364a;
-  --complementary: rgb(250 204 21);
+  --complementary: rgb(239, 209, 86);
   --secondary: #066a39;
   --background: #121212;
   --background-secondary: #3e2a2a;
