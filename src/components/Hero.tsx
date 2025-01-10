@@ -23,7 +23,7 @@ const Hero = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat block dark:hidden"
           style={{
-            backgroundImage: "url('/imagenes/bannerClaro.jpg')",
+            backgroundImage: "url('/imagenes/bannerClaro.png')",
           }}
         />
         <div
@@ -67,7 +67,7 @@ const Hero = () => {
               <ArrowDownTrayIcon className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
 
-            <div className="flex items-center gap-4 mt-4 sm:mt-0">
+            <div className="flex items-center gap-4 mt-4 sm:mt-3 mb-4">
               <Link 
                 href="https://www.linkedin.com/in/jhan-arevalo" 
                 target="_blank"
