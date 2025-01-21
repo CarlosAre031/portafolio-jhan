@@ -34,7 +34,7 @@ const skillsData = {
     },
     {
       title: "Ingeniería de software",
-      year: "2024 - 2026",
+      year: "2026",
       description: "Ingeniero de software con formación en diseño, desarrollo e implementación de soluciones tecnológicas. Experto en programación, bases de datos, inteligencia artificial y metodologías ágiles, con habilidades para resolver problemas complejos y liderar proyectos innovadores. Comprometido con la calidad, la eficiencia y la transformación digital en un entorno en constante evolución.",
       institution: "Fundación Universitaria Compensar",
       location: "Bogota, Colombia",
