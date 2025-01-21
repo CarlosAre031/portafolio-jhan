@@ -27,10 +27,18 @@ const skillsData = {
     {
       title: "Tecnólogo en Análisis y Desarrollo de Software",
       year: "2022 - 2024",
-      description: "Formación especializada en desarrollo de software con énfasis en seguridad informática y mejores prácticas de programación. Competencias en desarrollo seguro y gestión de vulnerabilidades.",
+      description: "Tecnólogo en Análisis y Desarrollo de Software, capacitado para diseñar, desarrollar e implementar aplicaciones de software. Experto en análisis de requisitos, programación, bases de datos y pruebas de calidad. Orientado a la solución de problemas tecnológicos y comprometido con la innovación, la eficiencia y la mejora continua en entornos dinámicos.",
       institution: "SENA - Servicio Nacional de Aprendizaje",
       location: "Bogota, Colombia",
       badge: "Finalizado"
+    },
+    {
+      title: "Ingeniería de software",
+      year: "2024 - 2026",
+      description: "Ingeniero de software con formación en diseño, desarrollo e implementación de soluciones tecnológicas. Experto en programación, bases de datos, inteligencia artificial y metodologías ágiles, con habilidades para resolver problemas complejos y liderar proyectos innovadores. Comprometido con la calidad, la eficiencia y la transformación digital en un entorno en constante evolución.",
+      institution: "Fundación Universitaria Compensar",
+      location: "Bogota, Colombia",
+      badge: "En curso"
     }
   ],
 
